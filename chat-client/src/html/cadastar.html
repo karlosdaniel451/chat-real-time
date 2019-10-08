@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Chat - Cadastar</title>
+  <!-- Compiled and minified CSS for Materialize -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+  <!-- Compiled and minified JavaScript for Materialize-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <!--- <link rel="stylesheet" href="../../static/stylesheets/main-style.css" /> -->
+</head>
+
+<body>
+  <main>
+    <center>
+
+      <h4 class="">Cadastre-se</h4>
+      <div class="section"></div>
+
+      <div class="container">
+        <div class="z-depth-1 grey lighten-4 row"
+          style="display: inline-block; padding: 32px 48px 0px 48px; border: 1px solid #EEE;">
+          <form id="register-form" class="col s12 register-form">
+            <div class="row">
+              <div class="input-field col s6">
+                <input name="firstName" id="firstName" type="text" class="validate" required />
+                <label for="firstName">Primeiro nome</label>
+              </div>
+              <div class="input-field col s6">
+                <input name="lastName" id="lastName" type="text" class="validate" required />
+                <label for="lastName">Último nome</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input name="email" id="email" type="email" class="validate" required />
+                <label for="email">Email</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input name="username" id="username" type="text" class="validate" required />
+                <label for="username">Nome de usuário</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input name="password" id="password" type="password" class="validate" required />
+                <label for="password">Senha</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input name="confirmPassword" id="confirmPassword" type="password" class="validate" required />
+                <label for="confirmPassword" data-error="As senhas não se equivalem"
+                  data-success="As senhas se equivalem">Confirme a senha</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <button type="submit" name="register-button" class="col btn waves-effect">
+                Cadastrar
+              </button>
+              <button type="reset" name="register-button" class="col btn waves-efefct right button-reset">
+                Limpar
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <a href="./index.html" class="">Clique aqui para fazer login</a>
+
+    </center>
+
+    <div class="section"></div>
+
+  </main>
+
+  <script>
+    /*
+  // No, I am not using JQuery
+  const $ = document.querySelector.bind(document);
+
+  const passwordField = $('#password');
+  const confirmPasswordField = $('confirm-password');
+
+  document.getElementById('confirm-password').addEventListener('mouseout', () => ){
+      if (passwordField.vaue 5 == confirmPasswordField.value) {
+          this.classList.remove('invalid');
+          this.classList.add('valid')
+      }
+  }
+  */
+  </script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="../js/cadastrar.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+{
+  "name": "chat-api",
+  "version": "1.0.0",
+  "description": " Este projeto se trata de uma API para um Chat em tempo real.",
+  "main": "index.js",
+  "author": "Karlos Daniel Pires da Silva",
+  "license": "MIT"
+}
